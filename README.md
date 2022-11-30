@@ -11,7 +11,8 @@
 - [x] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
-- Probably more
+
++ Probably more
 
 ## Links:
 [Author GitHub](https://github.com/Martan03)  
