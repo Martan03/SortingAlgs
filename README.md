@@ -1,9 +1,9 @@
 # C Sorting Algorithms
 
 ## Overview:
-### Bubble Sort
-### Selection Sort
-### Insertion Sort
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
 
 ## TODO:
 - [x] Bubble Sort
