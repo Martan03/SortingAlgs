@@ -2,12 +2,15 @@
 
 ## Overview:
 ### Bubble Sort
-### Select Sort
+### Selection Sort
+### Insertion Sort
 
 ## TODO:
-- Insertion Sort
-- Merge Sort
-- Quick Sort
+- [x] Bubble Sort
+- [x] Selection Sort
+- [x] Insertion Sort
+- [ ] Merge Sort
+- [ ] Quick Sort
 - Probably more
 
 ## Links:
