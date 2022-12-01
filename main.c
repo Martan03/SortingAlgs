@@ -25,6 +25,7 @@ void InsertSort(double *nums, int len);
 /// @param len length of the array
 void MergeSort(double *nums, int len);
 
+// Merge sort help function (this sorts :) )
 void _MergeSort(double *nums, int left, int right);
 
 /// @brief Prints double array
