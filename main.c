@@ -37,10 +37,10 @@ int main()
 {
     double nums[] = { 10, 8, 2, 7, 4, 3, 6, 1, 9, 5 };
     int len = 10;
-    //BubbleSort(nums, len);
+    BubbleSort(nums, len);
     //SelectSort(nums, len);
     //InsertSort(nums, len);
-    MergeSort(nums, len);
+    //MergeSort(nums, len);
     PrintNums(nums, len);
 }
 
@@ -54,9 +54,9 @@ void Swap(double *x, double *y)
 void BubbleSort(double *nums, int len)
 {
     for (int i = 0; i < len; ++i)
-        for (int j = i + 1; j < len; ++j)
-            if (nums[i] > nums[j])
-                Swap(&nums[i], &nums[j]);
+        for (int j = 1; j < len - i; ++j)
+            if (nums[j] < nums[j - 1])
+                Swap(&nums[j], &nums[j - 1]);
 }
 
 void SelectSort(double *nums, int len)
