@@ -8,7 +8,10 @@
             "program": "${workspaceFolder}/main",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "Makefile"
+            "preLaunchTask": "Makefile",
+            "env": {
+                "ASAN_OPTIONS": "detect_leaks=0"
+            }
         }
     ]
 }
