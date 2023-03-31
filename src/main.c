@@ -27,9 +27,10 @@ void PrintNums(double *nums, int len);
 
 int main()
 {
-    double nums[] = { 10, 8, 2, 7, 4, 3, 6, 1, 9, 5 };
+    //double nums[] = { 10, 8, 2, 7, 4, 3, 6, 1, 9, 5 };
+    double nums[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     int len = 10;
-    bubble_sort_recursive(nums, len);
+    bubble_sort_improved(nums, len);
     //SelectSort(nums, len);
     //InsertSort(nums, len);
     //MergeSort(nums, len);

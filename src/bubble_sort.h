@@ -9,6 +9,12 @@
 /// @param len length of the array
 void bubble_sort(double *nums, int len);
 
+/// @brief Sorts double array using improved Bubble sort
+/// Added detection of last swap
+/// @param nums double array
+/// @param len length of the array
+void bubble_sort_improved(double *nums, int len);
+
 /// @brief Sorts double array using recursive Bubble sort
 /// @param nums double array
 /// @param len length of the array
