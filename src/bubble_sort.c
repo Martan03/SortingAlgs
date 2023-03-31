@@ -1,5 +1,7 @@
 #include "bubble_sort.h"
 
+void _bubble_sort_recursive(double *nums, int len);
+
 void bubble_sort(double *nums, int len) {
     for (int i = 0; i < len; ++i) {
         for (int j = 1; j < len - i; ++j) {
@@ -7,6 +9,24 @@ void bubble_sort(double *nums, int len) {
                 swap(&nums[j], &nums[j - 1]);
         }
     }
+}
+
+void bubble_sort_recursive(double *nums, int len) {
+    if (len <= 1)
+        return;
+
+    _bubble_sort_recursive(nums, len);
+    bubble_sort_recursive(nums, --len);
+}
+
+void _bubble_sort_recursive(double *nums, int len) {
+    if (len <= 1)
+        return;
+
+    if (*nums > nums[1])
+        swap(nums, &nums[1]);
+    
+    _bubble_sort_recursive(++nums, --len);
 }
 
 void coctail_sort(double *nums, int len) {

@@ -9,10 +9,16 @@
 /// @param len length of the array
 void bubble_sort(double *nums, int len);
 
+/// @brief Sorts double array using recursive Bubble sort
+/// @param nums double array
+/// @param len length of the array
+void bubble_sort_recursive(double *nums, int len);
+
 /// @brief Sorts double array using Coctail sort
 /// Similiar to Bubble sort, looping array one way and then back
 /// @param nums double array
 /// @param len length of the array
 void coctail_sort(double *nums, int len);
+
 
 #endif // BUBBLE_SORT_INCLUDED
