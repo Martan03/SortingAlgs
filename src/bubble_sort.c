@@ -1,6 +1,6 @@
-#include "bubble_sort.h"
+#include "sorts.h"
 
-/// @brief Helper function for Bubble sort recursive
+/// @brief Helper function for recursive Bubble sort
 /// @param nums double array
 /// @param len length of the array
 void _bubble_sort_recursive(double *nums, int len);
@@ -15,7 +15,7 @@ void bubble_sort(double *nums, int len) {
 }
 
 void bubble_sort_improved(double *nums, int len) {
-    for (int i = len, last = 1; i > 1; i = last) {
+    for (int i = len, last = 1; i > 1; i = last, last = 1) {
         for (int j = 1; j < i; ++j) {
             if (nums[j] < nums[j - 1]) {
                 swap(&nums[j], &nums[j - 1]);

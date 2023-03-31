@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "bubble_sort.h": "c"
+        "bubble_sort.h": "c",
+        "stdio.h": "c",
+        "insert_sort.h": "c",
+        "sorts.h": "c"
     }
 }
