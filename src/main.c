@@ -5,7 +5,7 @@
 
 #define DG "\x1b[92m"
 #define DW "\x1b[97m"
-#define DBB "\x1b[90m"
+#define DBB "\x1b[38;2;70;70;70m"
 #define DRS "\x1b[0m"
 
 /// @brief Generates array with ascending numbers
