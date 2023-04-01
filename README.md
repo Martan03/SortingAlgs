@@ -36,11 +36,11 @@ so I tested it. Each algorithm sorts ascending array, descending array and
 array with random numbers.
 
 Bubble sort algorithms take a while, so I tested them with only 100.000 numbers.
-There are the results:
+There are the results:  
 ![image](https://user-images.githubusercontent.com/46300167/229298216-5839b0bb-8d39-455c-a854-8597b94aa09d.png)
 
 
-Then I tested all other algorithms, this time with 1.000.000 numbers:
+Then I tested all other algorithms, this time with 1.000.000 numbers:  
 ![image](https://user-images.githubusercontent.com/46300167/229298302-0e3cb04e-f37f-4c0e-9eb9-8ebdfdafd15e.png)
 
 ## Links
