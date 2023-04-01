@@ -74,6 +74,13 @@ void select_sort(double* nums, int len);
 /// @param len length of the array
 void insert_sort(double* nums, int len);
 
+//======================<QUICK SORT>=======================
+
+/// @brief Sorts double array using Quick sort
+/// @param nums double array
+/// @param len length of the array
+void quick_sort(double* nums, int len);
+
 //======================<MERGE SORT>=======================
 
 /// @brief Sorts double array using Merge sort

@@ -75,6 +75,9 @@ int main() {
     printf(DG "Insert sort:\n" DRS);
     test_sort(&insert_sort, t, len);
 
+    printf(DG "Quick sort:\n" DRS);
+    test_sort(&quick_sort, t, len);
+
     printf(DG "Merge sort:\n" DRS);
     test_sort(&merge_sort, t, len);
 
