@@ -57,7 +57,7 @@ int main() {
     time(&t);
 
     int len = 100000;
-
+/*
     printf(DG "Bubble sort:\n" DRS);
     test_sort(&bubble_sort, t, len);
     printf(DG "Bubble Sort optimised:\n" DRS);
@@ -66,9 +66,10 @@ int main() {
     test_sort(&bubble_sort_improved, t, len);
     printf(DG "Bubble Sort recursive:\n" DRS);
     test_sort(&bubble_sort_recursive, t, len);
+*/
     printf(DG "Coctail Sort:\n" DRS);
     test_sort(&coctail_sort, t, len);
-
+/*
     printf(DG "Select sort:\n" DRS);
     test_sort(&select_sort, t, len);
 
@@ -83,6 +84,7 @@ int main() {
 
     printf(DG "C qsort:\n" DRS);
     test_qsort(t, len);
+*/
 
     return 0;
 }

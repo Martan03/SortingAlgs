@@ -60,11 +60,15 @@ void coctail_sort(double* nums, int len) {
     int dir[2] = {1, -1};
     int start[2] = {1, len - 1};
     bool back = false;
+    bool swapped = true;
 
-    for (int i = 0; i < len; ++i) {
+    for (int i = 0; i < len && swapped; ++i) {
+        swapped = false;
         for (int j = start[back]; j < len && j > 0; j += dir[back]) {
-            if (nums[j - 1] > nums[j])
+            if (nums[j - 1] > nums[j]) {
                 swap(&nums[j], &nums[j - 1]);
+                swapped = true;
+            }
         }
         back = !back;
     }
