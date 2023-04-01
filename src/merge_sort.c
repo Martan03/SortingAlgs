@@ -1,28 +1,26 @@
 #include "sorts.h"
 
 // Merge sort help function (this sorts :) )
-void _MergeSort(double *nums, int left, int right);
+void _merge_sort(double* nums, int left, int right);
 
-void MergeSort(double *nums, int len)
-{
+void merge_sort(double* nums, int len) {
     if (len <= 0)
         return;
-    _MergeSort(nums, 0, len - 1);
+    _merge_sort(nums, 0, len - 1);
 }
 
-void _MergeSort(double *nums, int left, int right)
-{
+void _merge_sort(double* nums, int left, int right) {
     if (left >= right)
         return;
     
-    int middle = (left + right) / 2;
-    _MergeSort(nums, left, middle);
-    _MergeSort(nums, middle + 1, right);
+    int mid = (left + right) / 2;
+    _merge_sort(nums, left, mid);
+    _merge_sort(nums, mid + 1, right);
 
-    int tempLen = right - left + 1;
-    double temp[tempLen];
+    int len = right - left + 1;
+    double temp[len];
     int l, r, k;
-    for (l = left, r = middle + 1, k = 0; k < tempLen && l <= middle && r <= right; ++k)
+    for (l = left, r = mid + 1, k = 0; k < len && l <= mid && r <= right; ++k)
     {
         if (nums[l] < nums[r])
             temp[k] = nums[l++];
@@ -30,13 +28,13 @@ void _MergeSort(double *nums, int left, int right)
             temp[k] = nums[r++];
     }
 
-    for (; l <= middle; ++l)
+    for (; l <= mid; ++l)
         temp[k++] = nums[l];
 
     for (; r <= right; ++r)
         temp[k++] = nums[r];
 
-    for (int i = 0; i < tempLen; ++i)
+    for (int i = 0; i < len; ++i)
         nums[left + i] = temp[i];
     
     return;

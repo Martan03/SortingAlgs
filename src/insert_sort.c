@@ -1,13 +1,9 @@
 #include "sorts.h"
 
-void insert_sort(double *nums, int len)
-{
-    for (int j, k, i = 0; i < len; ++i)
-    {
-        for (j = i + 1; j < len && nums[j - 1] < nums[j]; ++j);
-        if (j == len)
-            break;
-        for (k = j - 1; k >= 0 && nums[k + 1] < nums[k]; --k)
-            swap(&nums[k + 1], &nums[k]);
+void insert_sort(double* nums, int len) {
+    for (int j = 0, i = 1, k = nums[i]; i < len; ++i, k = nums[i]) {
+        for (j = i - 1; j >= 0 && nums[j] > k; --j)
+            nums[j + 1] = nums[j];
+        nums[j + 1] = k;
     }
 }

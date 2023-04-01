@@ -11,16 +11,27 @@ int main() {
     time_t t;
     time(&t);
 
-    int len = 50000;
+    int len = 100000;
 
     printf("%30s", "Bubble sort: ");
     test_sort(&bubble_sort, t, len);
-
+    printf("%30s", "Bubble Sort optimised: ");
+    test_sort(&bubble_sort_optimised, t, len);
     printf("%30s", "Bubble Sort improved: ");
     test_sort(&bubble_sort_improved, t, len);
-
     printf("%30s", "Bubble Sort recursive: ");
     test_sort(&bubble_sort_recursive, t, len);
+    printf("%30s", "Coctail Sort: ");
+    test_sort(&coctail_sort, t, len);
+
+    printf("%30s", "Select sort: ");
+    test_sort(&select_sort, t, len);
+
+    printf("%30s", "Insert sort: ");
+    test_sort(&insert_sort, t, len);
+
+    printf("%30s", "Merge sort: ");
+    test_sort(&merge_sort, t, len);
 
     return 0;
 }
