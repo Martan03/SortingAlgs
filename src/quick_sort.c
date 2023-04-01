@@ -20,20 +20,23 @@ void quick_sort(double* nums, int len) {
 void _quick_sort(double* nums, int low, int high) {
     if (low < high) {
         int p = partition(nums, low, high);
-        _quick_sort(nums, low, p - 1);
+        _quick_sort(nums, low, p);
         _quick_sort(nums, p + 1, high);
     }
 }
 
 int partition(double* nums, int low, int high) {
-    int pivot = nums[high];
-    int i = low;
+    int pivot = nums[(low + high) / 2];
+    int i = low - 1;
+    int j = high + 1;
 
-    for (int j = low; j < high; ++j) {
-        if (nums[j] < pivot)
-            swap(&nums[i++], &nums[j]);
+    for (;;) {
+        for (; nums[++i] < pivot;);
+        for (; nums[--j] > pivot;);
+
+        if (i >= j)
+            return j;
+        
+        swap(&nums[i], &nums[j]);
     }
-
-    swap(&nums[i], &nums[high]);
-    return i;
 }

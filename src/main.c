@@ -56,7 +56,7 @@ int main() {
     time_t t;
     time(&t);
 
-    int len = 10000;
+    int len = 100000;
 
     printf(DG "Bubble sort:\n" DRS);
     test_sort(&bubble_sort, t, len);
@@ -109,6 +109,13 @@ void _test_sort(void (*sort)(double* nums, int len), double* nums, int len) {
     printf(
         DBB "time = " DRS "%.5f\n", (double)(clock() - start) / CLOCKS_PER_SEC
     );
+
+    for (int i = 1; i < len; ++i) {
+        if (nums[i - 1] > nums[i]) {
+            printf("Not sorted\n");
+            break;
+        }
+    }
 
     free(nums);
 }
