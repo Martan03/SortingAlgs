@@ -55,7 +55,7 @@ int compare(const void* a, const void* b);
 int main() {
     time_t t;
     time(&t);
-
+/*
     int len = 100000;
 
     printf(DG "Bubble sort:\n" DRS);
@@ -76,7 +76,8 @@ int main() {
 
     printf(DG "Insert sort:\n" DRS);
     test_sort(&insert_sort, t, len);
-
+*/
+    int len = 1000000000;
     printf(DG "Quick sort:\n" DRS);
     test_sort(&quick_sort, t, len);
 
@@ -94,10 +95,12 @@ int main() {
 void test_sort(void (*sort)(double* nums, int len), time_t t, int len) {
     srand(t);
 
+    /*
     printf(DW "  %-18s" DRS, "Ascending array: ");
     _test_sort(sort, asc_nums(len), len);
     printf(DW "  %-18s" DRS, "Descending array: ");
     _test_sort(sort, desc_nums(len), len);
+    */
     printf(DW "  %-18s" DRS, "Random array: ");
     _test_sort(sort, random_nums(len), len);
 }
