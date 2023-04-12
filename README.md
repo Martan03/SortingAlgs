@@ -46,5 +46,5 @@ Then I tested all other algorithms, this time with 1.000.000 numbers:
 ## Links
 
 - **Author:** [Martan03](https://github.com/Martan03)
-- **GitHub repository:** [TicTacToe](https://github.com/Martan03/TicTacToe)
+- **GitHub repository:** [SortingAlgs](https://github.com/Martan03/SortingAlgs)
 - **Author website:** [martan03.github.io](https://martan03.github.io)
