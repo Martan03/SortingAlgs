@@ -26,7 +26,7 @@ void _quick_sort(double* nums, int low, int high) {
 }
 
 int partition(double* nums, int low, int high) {
-    double pivot = nums[(low + high) / 2];
+    double pivot = nums[(low + high) >> 1];
     int i = low - 1;
     int j = high + 1;
 
@@ -36,7 +36,7 @@ int partition(double* nums, int low, int high) {
 
         if (i >= j)
             return j;
-        
+
         swap(&nums[i], &nums[j]);
     }
 }

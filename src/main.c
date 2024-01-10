@@ -136,7 +136,7 @@ void test_qsort(time_t t, int len) {
 void _test_qsort(double* nums, int len) {
     if (!nums)
         return;
-    
+
     clock_t start = clock();
     qsort(nums, len, sizeof(double), compare);
     printf(
@@ -155,7 +155,7 @@ double* asc_nums(int len) {
 
     for (int i = 0; i < len; ++i)
         nums[i] = i + 1;
-    
+
     return nums;
 }
 
@@ -166,7 +166,7 @@ double* desc_nums(int len) {
 
     for (int i = 0; i < len; ++i)
         nums[i] = len - i;
-    
+
     return nums;
 }
 
@@ -174,10 +174,10 @@ double* random_nums(int len) {
     double* nums = malloc(sizeof(double) * len);
     if (!nums)
         return NULL;
-    
+
     for (int i = 0; i < len; ++i)
         nums[i] = rand();
-    
+
     return nums;
 }
 
